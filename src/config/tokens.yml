@@ -96,3 +96,6 @@ gastly-lp-geth:
   default_price: 1.0
 esx:
   default_price: 1.0
+cvm:
+  # coingecko_id: "ucvm"
+  default_price: 0.5
