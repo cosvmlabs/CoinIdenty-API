@@ -28,6 +28,15 @@ const getChains = (chain_types = []) => {
                   blockExplorerUrls: [url],
                 }];
                 break;
+              case 'cosmos': 
+              //not provided 'tobehex()' like funciton for cosmos chain_id like evm, need research
+                provider_params = [{
+                  chainId: chain_id, 
+                  chainName: name,
+                  rpcUrls: toArray(rpc),
+                  nativeCurrency: native_token,
+                  blockExplorerUrls: [url],
+                }]
               default:
                 break;
             }
@@ -37,7 +46,7 @@ const getChains = (chain_types = []) => {
               chain_type: k,
               provider_params,
             };
-            return [_k, _v];
+            return [`${k}-${_k}`, _v];
           })
         )
     )

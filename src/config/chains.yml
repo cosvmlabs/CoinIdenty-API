@@ -136,3 +136,50 @@ evm:
       contract_path: "/token/{address}"
       contract_0_path: "/address/{address}"
       transaction_path: "/tx/{tx}"
+  cvm:
+    chain_id: 323
+    endpoints:
+      rpc:
+        - "'https://rpc.cosvm.net/"
+    native_token:
+      name: "CosVM EVM Chain"
+      symbol: "CVM"
+      decimals: 18
+    name: "CosVM EVM Chain"
+    short_name: "CVM"
+    image: "/logos/chains/cvm.svg" 
+    # just changed logo text to cvm, need to add cvm logo wherever necessary. 
+    color: "#c0c2c3"
+    explorer:
+      name: "Cosvm explorer"
+      url: "https://explorer.cosvm.net/"
+      icon: "/logos/explorers/cvm.png"
+      block_path: "/block/{block}"
+      address_path: "/address/{address}"
+      contract_path: "/token/{address}"
+      contract_0_path: "/address/{address}"
+      transaction_path: "/transactions/{tx}"
+cosmos:
+  cvm:
+    chain_id: "cvm_323-1"
+    endpoints:
+      rpc:
+        - "https://cvm.cosvm.net/"
+    native_token:
+      name: "CosVM COSMOS Chain"
+      symbol: "CVM"
+      decimals: 18
+    name: "CosVM COSMOS Chain"
+    short_name: "CVM"
+    image: "/logos/chains/cvm.svg" 
+    # just changed logo text to cvm, need to add cvm logo wherever necessary. 
+    color: "#c0c2c3"
+    explorer:
+      name: "Cosvm explorer"
+      url: "https://scan.cosvm.net"
+      icon: "/logos/explorers/cvm.png"
+      block_path: "/block/{block}"
+      address_path: "/address/{address}"
+      contract_path: "/token/{address}"
+      contract_0_path: "/address/{address}"
+      transaction_path: "/transactions/{tx}"
