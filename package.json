@@ -5,6 +5,6 @@
   "main": "src/index.js",
   "scripts": {
     "heroku-prebuild": "cd src && npm install ",
-    "start": "node src/index.js"
+    "start": "cd src && node index.js"
   }
 }
