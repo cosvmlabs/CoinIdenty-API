@@ -6,7 +6,7 @@ const { twitter, telegram } = require('../broadcasts');
 const { CURRENCY } = require('../../utils/config');
 const { sleep, split, toArray, numberFormat } = require('../../utils');
 
-const WEBSITE = 'https://coinhippo.io';
+const WEBSITE = 'https://coinidenty.com';
 const TIMES = ['1h', '24h', '7d', '30d'];
 const EXCLUDES = ['tether','usd-coin','binance-usd','dai','frax','true-usd','compound-usd-coin','paxos-standard','neutrino','huobi-btc','usdd','compound-ether','cdai','fei-usd','tether-eurt','flex-usd','alchemix-usd','gemini-dollar','husd','liquity-usd','iron-bank-euro','usdx','nusd','terrausd','seth2','celo-dollar','ageur','compound-basic-attention-token','usdk','musd','celo-euro','seth','instadapp-eth','compound-uniswap','compound-0x','sbtc','compound-chainlink-token','e-money-eur','spiceusd','compound-wrapped-btc','tbtc','seur','veusd','compound-maker','compound-sushi'];
 
@@ -28,7 +28,7 @@ module.exports = async () => {
   response = await getCoingecko({ path: '/coins/markets', category: 'non-fungible-tokens-nft', vs_currency: CURRENCY, order: 'market_cap_desc', per_page: 250, price_change_percentage: TIMES.join(',') });
   const nfts = toArray(response).filter(d => !EXCLUDES.includes(d.id));
   await sleep(30 * 1000);
-
+  
   response = await getCoingecko({ path: '/search/trending' });
   let trendings = toArray(toArray(response?.coins).map(d => d.item));
   if (trendings.length > 0) {
