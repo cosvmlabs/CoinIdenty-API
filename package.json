@@ -4,7 +4,7 @@
   "description": "coinidenty-API",
   "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "heroku-postbuild": "cd src && npm install && npm run build"
+    "heroku-prebuild": "cd src && npm install ",
+    "start": "node src/index.js"
   }
 }
