@@ -1,0 +1,10 @@
+{
+  "name": "coinidenty-api",
+  "version": "1.0.0",
+  "description": "coinidenty-API",
+  "main": "src/index.js",
+  "scripts": {
+    "heroku-prebuild": "cd src && npm install ",
+    "start": "cd src && node index.js"
+  }
+}

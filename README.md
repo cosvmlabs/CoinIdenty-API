@@ -1,4 +1,4 @@
-# CoinHippo API
+# CoinIdenty API
 
 ## API Endpoint
 - [https://api.coinhippo.io](https://api.coinhippo.io)
@@ -10,10 +10,12 @@
 3. [Install terraform](https://learn.hashicorp.com/tutorials/terraform/install-cli)
 
 ```bash
-cd ./src
+clone this repo
+cd src 
 yarn
-cd ../terraform
-cp variables.tf.example variables.tf
-terraform init
-terraform apply
+yarn dev
+# cd ../terraform
+# cp variables.tf.example variables.tf
+# terraform init
+# terraform apply
 ```
