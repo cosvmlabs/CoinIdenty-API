@@ -98,4 +98,4 @@ esx:
   default_price: 1.0
 cvm:
   # coingecko_id: "ucvm"
-  default_price: 0.5
+  default_price: 0.1
