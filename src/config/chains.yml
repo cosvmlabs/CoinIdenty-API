@@ -140,7 +140,7 @@ evm:
     chain_id: 323
     endpoints:
       rpc:
-        - "'https://rpc.cosvm.net/"
+        - "https://rpc.cosvm.net/"
     native_token:
       name: "CosVM EVM Chain"
       symbol: "CVM"
